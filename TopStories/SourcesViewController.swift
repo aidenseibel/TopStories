@@ -19,6 +19,13 @@ class SourcesViewController: UITableViewController {
         let query = "https://newsapi.org/v1/sources?language=en&country=us&apiKey=\(apiKey)"
         
     }
+    
+    func parse(json: JSON){
+        for result in json["sources"].arrayValue {
+            print(result)
+            
+        }
+    }
 }
 
 
