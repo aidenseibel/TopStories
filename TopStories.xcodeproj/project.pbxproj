@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0625D89E2788D49000306451 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625D89D2788D49000306451 /* ArticlesViewController.swift */; };
 		068C849C27862DAB005CF207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C849B27862DAB005CF207 /* AppDelegate.swift */; };
 		068C849E27862DAB005CF207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C849D27862DAB005CF207 /* SceneDelegate.swift */; };
 		068C84A027862DAB005CF207 /* SourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C849F27862DAB005CF207 /* SourcesViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0625D89D2788D49000306451 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		068C849827862DAB005CF207 /* TopStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068C849B27862DAB005CF207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068C849D27862DAB005CF207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				068C849B27862DAB005CF207 /* AppDelegate.swift */,
 				068C849D27862DAB005CF207 /* SceneDelegate.swift */,
 				068C849F27862DAB005CF207 /* SourcesViewController.swift */,
+				0625D89D2788D49000306451 /* ArticlesViewController.swift */,
 				068C84A127862DAB005CF207 /* Main.storyboard */,
 				068C84A427862DB0005CF207 /* Assets.xcassets */,
 				068C84A627862DB0005CF207 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				068C849C27862DAB005CF207 /* AppDelegate.swift in Sources */,
 				068C849E27862DAB005CF207 /* SceneDelegate.swift in Sources */,
 				068C84B0278641A1005CF207 /* SwiftyJSON.swift in Sources */,
+				0625D89E2788D49000306451 /* ArticlesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
