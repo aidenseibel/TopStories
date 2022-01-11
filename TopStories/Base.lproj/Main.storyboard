@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="bhV-ti-JnF" kind="show" id="fMV-Wk-Raa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -75,6 +78,7 @@
                             <outlet property="delegate" destination="bhV-ti-JnF" id="ZhR-35-PfJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="AOc-4T-hGN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kp-PK-y4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,20 +6,20 @@
 //
 
 import UIKit
+import SafariServices
 
 class ArticlesViewController: UITableViewController {
 
     var articles = [[String: String]]()
     var source = [String: String]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Top Stories"
-        let query = "https://newsapi.org/v1/articles?source= \(source["id"]!)&apiKey= \(apiKey)"
+        let query = "https://newsapi.org/v1/articles?source=\(source["id"]!)&apiKey=\(apiKey)"
             
         let url = URL(string: query)!
-        
         
         DispatchQueue.global().async{
             if let data = try? Data(contentsOf: url){
@@ -32,18 +32,14 @@ class ArticlesViewController: UITableViewController {
                 self.showError()
             }
         }
-        
-        
-        
-        
     }
     
     func parse(json: JSON){
         for result in json["articles"].arrayValue {
-             let title = result[ "title"].stringValue
-             let description = result[ "description" ].stringValue
+             let title = result["title"].stringValue
+             let description = result["description"].stringValue
              let url = result[ "url"].stringValue
-             let article = [ "title": title, "description" : description,
+             let article = ["title": title, "description": description,
              "url": url]
              articles.append(article)
         }
@@ -78,8 +74,8 @@ class ArticlesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tappedArticle = articles[indexPath.row]
         let url = URL(string: tappedArticle["url"]!)
-        UIApplication.shared.open(url!)
+        let svc = SFSafariViewController(url: url!)
+        present(svc, animated: true, completion: nil)
     }
 }
-
 
