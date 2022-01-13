@@ -10,9 +10,7 @@ import UIKit
 var selectedMeme: [String: String] = [:]
 var memes = [[String: String]]()
 
-
 class MemesListViewController: UITableViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +33,6 @@ class MemesListViewController: UITableViewController {
             }
         }
     }
-    
-    
-    
     
     func parse(json: JSON){
         let newJSON = json["data"]
@@ -67,12 +62,9 @@ class MemesListViewController: UITableViewController {
         }
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
     }
-    
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTitleCell", for: indexPath)
